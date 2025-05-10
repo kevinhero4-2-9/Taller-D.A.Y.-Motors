@@ -1,37 +1,135 @@
-<! DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>Bienvenido a D.A.Y. Motors</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<h1 align="center" style="font-family: 'Anton', sans-serif;
-font-size: 60px;
-color: #D32F2F; /* Rojo intenso */
-text-transform: uppercase;
-letter-spacing: 3px;
-text-shadow: 4px 4px 0px #F57C00, 6px 6px 10px rgba(0, 0, 0, 0.7)">Bienvenido a D.A.Y Motors</h1><p align="center"><img src="img/Imagen2.png" width="100" height="100"></p>
+    <meta charset="UTF-8">
+    <title>Bienvenido a D.A.Y. Motors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            text-shadow: 2px 2px #D32F2F;
+        }
+
+        header h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 60px;
+            letter-spacing: 4px;
+            color: #D32F2F;
+            margin-bottom: 10px;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+        nav {
+           position: sticky;
+           top: 0;
+           z-index: 1000;
+           background-color: #D32F2F;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #B71C1C;
+        }
+
+        nav i {
+            margin-right: 8px;
+        }
+
+        .container-form {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .container-form h2 {
+            color: #D32F2F;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container-form p {
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p:last-child {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body bgcolor="C0C0C0">
-    <div style="background-color: black;color: white;">
-        <h2 align="center">Contactanos</h2>
-    </div>
-    <div class="container-form">
-        <div class="info-form">
-            <p>En D.A.Y. Motors, estamos listos para atenderte y ofrecerte el mejor servicio para tu motocicleta. Ya sea que necesites mantenimiento, reparación o asesoramiento, nosotros estamos aquí para ayudarte.</p>
-             <li><a href="#"><i class="fa-solid fa-phone"></i>483 122 4013</a></li>
-             <li><a href="#"><i class="fa-solid fa-envelope"></i>danielhernandez.201020@gmail.com</a></li>
-             <li><a herf="#"><i class="fa-solid fa-location-dot"></i>Acoyotla Tepehuacan De Guerrero Hidalgo</a>s
-        </div>
-    </div>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a><a href="index.html">Inicio</a></li>
-                <li><a href="#"><i class="fa-solid fa-business-time"></i></a><a href="horario.html">Horario de atención</a></li>
-                <li><a href="#"><i class="fa-solid fa-wrench"></i></a><a href="piezas.html">Refacciones</a></li>
-                <li><a href="#"><i class="fa-solid fa-motorcycle"></i></a><a href="accesorio.html">Accesorios disponibles</a></li>
-                <li><a href="#"><i class="fa-solid fa-address-card"></i></a><a href="contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+
+<header>
+    <h1>D.A.Y. Motors</h1>
+    <p><img src="img/Imagen2.png" alt="Logo D.A.Y. Motors"></p>
+</header>
+
+<nav>
+    <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+    <a href="horario.html"><i class="fa-solid fa-business-time"></i>Horario</a>
+    <a href="piezas.html"><i class="fa-solid fa-wrench"></i>Refacciones</a>
+    <a href="accesorio.html"><i class="fa-solid fa-motorcycle"></i>Accesorios</a>
+    <a href="contactanos.html"><i class="fa-solid fa-address-card"></i>Contáctanos</a>
+</nav>
+
+<div class="container-form">
+    <h2>Contáctanos</h2>
+    <p>En D.A.Y. Motors, estamos listos para atenderte y ofrecerte el mejor servicio para tu motocicleta. Ya sea que necesites mantenimiento, reparación o asesoramiento, nosotros estamos aquí para ayudarte.</p>
+    <ul>
+        <li><a href="tel:+524831224013"><i class="fa-solid fa-phone"></i> 483 122 4013</a></li>
+        <li><a href="mailto:danielhernandez.201020@gmail.com"><i class="fa-solid fa-envelope"></i> danielhernandez.201020@gmail.com</a></li>
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Acoyotla Tepehuacan De Guerrero Hidalgo</a></li>
+    </ul>
+</div>
+
+<footer>
+    <p>©2025 Taller D.A.Y. Motors. Todos los derechos reservados.</p>
+    <p>By Kevinhero</p>
+</footer>
+
 </body>
 </html>

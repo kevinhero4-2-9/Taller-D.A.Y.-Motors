@@ -1,281 +1,251 @@
-<! DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>Bienvenido a D.A.Y. Motors</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<h1 align="center" style="font-family: 'Anton', sans-serif;
-font-size: 60px;
-color: #D32F2F; /* Rojo intenso */
-text-transform: uppercase;
-letter-spacing: 3px;
-text-shadow: 4px 4px 0px #F57C00, 6px 6px 10px rgba(0, 0, 0, 0.7)">Bienvenido a D.A.Y Motors</h1><p align="center"><img src="img/Imagen2.png" width="100" height="100"></p>
-</head>
-<body bgcolor="#C0C0C0">
-    <div style="background-color: black;color: white;">
-        <h2 align="center">Página de accesorios para tu motocicleta</h2>
-    </div>
-
-<main>
+    <meta charset="UTF-8">
+    <title>Bienvenido a D.A.Y. Motors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        table, th, td{
-            border: 1px solid black;
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            text-shadow: 2px 2px #D32F2F;
+        }
+
+        header h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 60px;
+            letter-spacing: 4px;
+            color: #D32F2F;
+            margin-bottom: 10px;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+        nav {
+           position: sticky;
+           top: 0;
+           z-index: 1000;
+           background-color: #D32F2F;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #B71C1C;
+        }
+
+        nav i {
+            margin-right: 8px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        main h2 {
+            color: #D32F2F;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            line-height: 1.8;
+        }
+
+        table {
+            width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #D32F2F;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #D32F2F;
+            color: white;
+        }
+
+        td {
+            background-color: #f5f5f5;
+        }
+
+        footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p:last-child {
+            color: red;
+            font-weight: bold;
         }
     </style>
-    <h1>Página de accesorios</h1>
-    <p>Aquí te mostraremos los accesorias para que puedas personalizar tu motocicleta</p>
-    <h3>Accesorios que iluminan tu estilo</h3>
+</head>
+<body>
 
-       <p style="width: 50%;"> En D.A.Y. Motors no solo cuidamos el rendimiento de tu moto, también la hacemos destacar. Descubre nuestra amplia selección de accesorios que combinan funcionalidad y estilo, ideales para personalizar tu motocicleta y mejorar tu experiencia en cada ruta.</p>
-        <h4>¿Qué encontrarás?</h4>
-        <table style="width: 70%;" align="center">
-            <tr>
-                <th>Accesorio</th>
-                <th>Descripción</th>
-            </tr>
-            <tr>
-                <td><img src="img/imagen3.jpg" width="200" height="200"></td>
-                <td>
-                    <li>faros LED de última generación, perfectos para motos, cuatrimotos, 4x4 y vehículos todo terreno.</li>
-                    <li>Doble función: luz de largo alcance y luz de trabajo amplia.</li>
-                    <li>Alta potencia: máxima iluminación incluso en las rutas más oscuras.</li>
-                    <li>Estructura resistente: fabricados para soportar polvo, lluvia y vibraciones extremas.</li>
-                    <li>Fácil instalación: incluye soportes ajustables.</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen4.jpg" width="200" height="200"></td>
-                <td>
-                    <li> Multifunción 3 en 1: luz de freno, direccionales dinámicas y luz trasera.</li>
-                    <li>Tecnología LED: iluminación potente y ahorro de energía.</li>
-                    <li>Instalación sencilla: adaptable a casi cualquier moto.</li>
-                    <li>Diseño flexible: ideal para carenados curvos o superficies irregulares.</li>
-                    <li>Resistente al agua: preparada para todo tipo de climas.</li>  
-                 </td>
-            </tr>
-            <tr>
-                <td>><img src="img/imagen5.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Luz blanca ultrabrillante, perfecta para conducción nocturna. </li>
-                    <li> Consumo eficiente, mayor duración y menor calentamiento.</li>
-                    <li>Carcasa resistente al agua y golpes.</li>
-                    <li>Compatible con la mayoría de modelos.</li>
-                    <li>Fácil instalación con soporte ajustable.</li>  
-                 </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen6.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Multicolor: Elige entre colores vibrantes como azul, rojo, blanco, morado y más.</li>
-                    <li>Función dinámica: luz fija para circulación y luz secuencial para direccionales.</li>
-                    <li> Flexible y recortable: se adapta a cualquier forma de faro, perfecta para motos deportivas, urbanas o personalizadas.</li>
-                    <li>Resistente al agua: sin miedo a la lluvia o el polvo.</li>
-                    <li>Fácil instalación: compatible con sistemas de 12V.</li>
-                 </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen7.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Focos LED H4 - Alta Potencia y Máxima Visibilidad</li>
-                    <li>Tipo de conector: H4 (compatible con muchos modelos)</li>
-                    <li> Tecnología: LED de alto brillo</li>
-                    <li>Voltaje: 12V - 24V (compatibles con sistemas eléctricos)</li>
-                    <li>Temperatura de color: 6000K (Luz blanca fría, ideal para mejorar la visibilidad nocturna)</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen8.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Doble iluminación (Blanco y Amarillo): Ideal para cualquier condición climática.</li>
-                    <li>Lente tipo lupa: Asegura un haz de luz más concentrado y potente.</li>
-                    <li> Material de alta resistencia: Carcasa de aluminio con diseño disipador de calor.</li>
-                    <li>Soporte ajustable: Fácil instalación y adaptación a diferentes ángulos.</li>
-                    <li>Incluye kit de instalación: Tornillos, arandelas y tuercas para un montaje rápido y seguro.</li>
-                    <li> Interruptores incluidos: Controla fácilmente el encendido y cambio de luz.</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen9.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Tipo: Faros LED auxiliares rectangulares</li>
-                    <li>Cantidad: 2 unidades</li>
-                    <li>Material: Carcasa de aluminio resistente con disipador de calor</li>
-                    <li>Color del cuerpo: Negro</li>
-                    <li>Iluminación: LED de alta potencia con luz blanca brillante</li>
-                    <li>Modos de luz: Luz de enfoque y luz de dispersión combinadas</li>
-                    <li>Lente: Acrílico resistente a impactos</li>
-                    <li>Base de montaje: Ajustable para diferentes ángulos de iluminación</li>
-                    <li>Incluye: Tornillos, tuercas y soportes para instalación</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen10.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Luces LED en Forma de Calavera para Motos</li>
-                    <li>Diseño innovador con forma de calavera para un look llamativo y personalizado.</li>
-                    <li>Iluminación LED de alta potencia con luz blanca y amarilla, ideal para mejorar la visibilidad en carretera.</li>
-                    <li>Fabricadas con materiales de alta calidad y resistencia al agua, perfectas para cualquier clima.</li>
-                    <li>Fácil instalación y compatibilidad con la mayoría de motocicletas.</li>
-                    <li>Incluye interruptor y accesorios de montaje.</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen11.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Luces LED con Diseño Futurista para Motos.</li>
-                    <li>Diseño inspirado en máscaras tácticas para un aspecto imponente y moderno.</li>
-                    <li> Iluminación LED de alta potencia con tres modos de luz: blanca, amarilla y combinación de ambas. </li>
-                    <li>Fabricadas con materiales de alta resistencia y protección contra el agua y el polvo.</li>
-                    <li>Incluyen interruptor de encendido y accesorios para una instalación sencilla.</li>
-                    <li>Compatibles con la mayoría de motocicletas y vehículos todoterreno.</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen12.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Color: negro</li>
-                    <li>Tipo de lámpara: foco</li>
-                    <li>Temperatura de color: 6000 K/3000 K</li>
-                    <li>Brillo: 6000 lm</li>
-                    <li>Lumen: 3000 lm por lámpara, 6000 lm por par</li>
-                    <li>Potencia: 12 W</li>
-                    <li>Voltaje: voltaje 12V</li>
-                    <li>Material: aleación de aluminio de aviación</li>
-                    <li>Vida útil: hasta 30.000 horas en uso normal</li>
-                    <li>Temperatura de funcionamiento: de -40 grados Celsius a +80 Celsius</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen13.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Potencia: 38W</li>
-                    <li>Lumen:3000LM</li>
-                    <li>Nombre del producto:Dos Color Faros Led</li>
-                    <li>Color de la carcasa de la luz: negro</li>
-                    <li>Bicolor: blanco/ámbar</li>
-                    <li>Temperatura de color: 3000k, 6000k</li>
-                    <li>Material: aleación de aluminio fundido a presión cáscara, lente óptica de PC</li>
-                    <li>Temperatura de trabajo: -40-185</li>
-                    <li>Grado de impermeabilidad: IP67</li>
-                    <li>Vida útil: 50000 horas</li>
-                    <li>Lista de paquetes: Piloto LED*2, Juego de tuercas*2</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen14.jpg" width="200" height="200"></td>
-                <td>
-                    <li>6 Modos de Luz : Amarillo (luz de cruce), Blanco (luz de carretera) , Rojo:(ojo de demonio), (flash); Nota: 1.Amarillo puede ser luz de carretera y blanco puede ser luz de cruce, sólo tiene que instalar de acuerdo a su necesidad </li>
-                    <liPulse el interruptor para cambiar el modo de las luces. ></li>
-                    <li>Función de luz blanca lo suficientemente brillante para el día y la noche, la función de luz ámbar ayuda a ver más claro en la niebla / lluvia / nieve, y la función de luz estroboscópica garantizar una advertencia más eficaz a otros vehículos.</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen15.jpg" width="200" height="200"></td>
-                <td>
-                    <li>10 modos de iluminación</li>
-                    <li>Modo 1: haz ámbar 3000k/amarillo (utilizado como luz antivaho).</li>
-                    <li>Modo 2:Luz estroboscópica amarilla</li>
-                    <li>Modo 3:Blanco 6000K para luz de carretera (utilizado como luz de marcha)</li>
-                    <li>Modo 4: Luz estroboscópica blanca</li>
-                    <li>Modo 5:Luz amarilla+blanca(4500K)</li>
-                    <li>Modo 6: Luz estroboscópica amarilla y blanca</li>
-                    <li>Modo 7: Luz azul</li>
-                    <li>Modo 8: Luz roja</li>
-                    <li>Modo 9: luz roja y azul</li>
-                    <li>Modo 10: Luz estroboscópica roja y azul</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen16.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Nombre del producto: Faros Auxiliares</li>
-                    <li>Color: focos blancos y amarillos.</li>
-                    <li>Peso: 220g</li>
-                    <li>Accesorios: soporte de luz de trabajo, tornillos</li>
-                    <li>Voltaje de entrada: 9-60V</li>
-                    <li>Potencia óptica: luz amarilla de haz bajo 30w, luz amarilla y blanca de haz alto 45w</li>
-                    <li>Efecto de iluminación: luz amarilla/luz blanca</li>
-                    <li>Material del producto: cuerpo de lámpara de aluminio engrosado</li>
-                    <li>Modelos aplicables: vehículos eléctricos/motocicletas y otros modelos</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen17.jpg" width="200" height="200"></td>
-                <td>
-                    <li>  1. Kit de chips Led para faros: nuestras 16 luces de trabajo Led utilizan chips Led avanzados y proporcionan 6400lm,6500K luz blanca súper brillante, que es mucho más brillante que los 14 chips de productos similares.</li>
-                 </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen18.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Cantidad de Leds: 9 Leds</li>
-                    <li>Consumo: 60 Watts</li>
-                    <li>Voltaje de operación: 12Vcc</li>
-                    <li>Lúmenes: 3000LM</li>
-                    <li>Tipo de proyección: Spot</li>
-                    <li>Temperatura color: 6000k – 2200K</li>
-                    <li>Color de luz: Blanco Frio</li>
-                    <li>Tiempo de vida: 50,000 horas reales</li>
-                    <li>Material Aluminio con cubierta de policarbonato resistente al impacto</li>
-                    <li>Distancia de penetración: 250m</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen19.jpg" width="200" height="200"></td>
-                <td>
-                    <li>FAROS CUADRADOS CON LUPA, ESTROBO Y ARILLO GEL AZUL 12/80V</li>
-                    <li>PAR DE FAROS AUXILIARES PARA MOTOCICLETA</li>
-                    <li>LUZ LED BLANCA CON LUPA</li>
-                    <li>OJO DE ÁNGEL AZUL</li>
-                    <li>INCLUYE BASES Y TORNILLOS PARA SU INSTALACIÓN</li>
-                    <li>MEDIDAS: ANCHO 7 CM, ALTO 6 CM (CON BASE 8 CM), PROFUNDIDAD 4.4 CM</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen20.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Peso: 0,132 kg</li>
-                    <li>Tamaño del producto: 11*6*4cm</li>
-                    <li>Material del producto: nuevo plástico ABS + perlas de lámpara LED</li>
-                    <li>Modelos aplicables: modelos con voltaje de 12v</li>
-                    <li>Orificio de montaje: 10MM</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen21.jpg" width="200" height="200"></td>
-                <td>
-                    <li>Color de la carcasa: negro</li>
-                    <li>Material: carcasa de aluminio + cuentas de luz súper brillantes + lentes de concentración</li>
-                    <li>Posicionamiento: iluminación decorativa</li>
-                    <li>Fuente de luz: 180 grados en tres direcciones - Luz LED central</li>
-                    <li>Parámetros: voltaje dc12v, Potencia 3w, valor óptico 70 - 200lm</li>
-                    <li>Colores disponibles: blanco, azul, rojo, amarillo, verde, Rosa - morado, azul hielo</li>
-                    <li>Uso: luz antiniebla delantera y trasera / luz de circulación diurna / luz de giro / luz de parachoques / luz de marcha atrás / flash de advertencia</li>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="img/imagen1.jpg" width="200" height="200"></td>
-                <td>
-                    <li>6 modos de iluminación: Nuestro foco LED se puede cambiar libremente entre 6 modos.</li>
-                    <li> La luz ámbar/amarilla de 3000 K se usa para luces bajas (usadas como luces antiniebla), la luz blanca de 6000 K se usa para luces altas (usadas como luces de conducción) y la luz blanca y amarilla de 4500 K se usa para iluminación de rango medio.</li>
-                </td>
-            </tr>
-        </table>
-</main>
 <header>
-    <nav>
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-house"></i></a><a href="index.html">Inicio</a></li>
-            <li><a href="#"><i class="fa-solid fa-business-time"></i></a><a href="horario.html">Horario de atención</a></li>
-            <li><a href="#"><i class="fa-solid fa-wrench"></i></a><a href="piezas.html">Refacciones</a></li>
-            <li><a href="#"><i class="fa-solid fa-motorcycle"></i></a><a href="accesorio.html">Accesorios disponibles</a></li>
-            <li><a href="#"><i class="fa-solid fa-address-card"></i></a><a href="contactanos.html">Contactanos</a></li>
-        </ul>
-    </nav>
+    <h1>D.A.Y. Motors</h1>
+    <p><img src="img/Imagen2.png" alt="Logo D.A.Y. Motors"></p>
 </header>
+
+<nav>
+    <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+    <a href="horario.html"><i class="fa-solid fa-business-time"></i>Horario</a>
+    <a href="piezas.html"><i class="fa-solid fa-wrench"></i>Refacciones</a>
+    <a href="accesorio.html"><i class="fa-solid fa-motorcycle"></i>Accesorios</a>
+    <a href="contactanos.html"><i class="fa-solid fa-address-card"></i>Contáctanos</a>
+</nav>
+
+<main>
+    <h2>Accesorios para tu Motocicleta</h2>
+    <p>Aquí te mostramos los accesorios más innovadores para personalizar tu motocicleta y mejorar su rendimiento.</p>
+    <table>
+        <tr>
+            <th>Accesorio</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td><img src="img/imagen3.jpg" width="200" height="200"></td>
+            <td>
+                <ul>
+                    <li>Faros LED de última generación.</li>
+                    <li>Doble función: luz de largo alcance y luz de trabajo.</li>
+                    <li>Alta potencia para máxima iluminación.</li>
+                    <li>Resistencia a vibraciones y condiciones extremas.</li>
+                    <li>Fácil instalación con soportes ajustables.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen4.jpg" width="200" height="200"></td>
+            <td>
+                <ul>
+                    <li>Luz de freno, direccionales dinámicas y luz trasera.</li>
+                    <li>Tecnología LED para ahorro de energía.</li>
+                    <li>Diseño flexible, ideal para motos de todos los tipos.</li>
+                    <li>Resistente al agua y compatible con diversos modelos.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen5.jpg" width="200" height="200"></td>
+            <td>
+                <li>Luz blanca ultrabrillante, perfecta para conducción nocturna.</li>
+                <li>Consumo eficiente, mayor duración y menor calentamiento.</li>
+                <li>Carcasa resistente al agua y golpes.</li>
+                <li>Compatible con la mayoría de modelos.</li>
+                <li>Fácil instalación con soporte ajustable.</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen6.jpg" width="200" height="200"></td>
+            <td>
+                <li>Multicolor: Elige entre colores vibrantes como azul, rojo, blanco, morado y más.</li>
+                <li>Función dinámica: luz fija para circulación y luz secuencial para direccionales.</li>
+                <li>Flexible y recortable: se adapta a cualquier forma de faro, perfecta para motos deportivas, urbanas o personalizadas.</li>
+                <li>Resistente al agua: sin miedo a la lluvia o el polvo.</li>
+                <li>Fácil instalación: compatible con sistemas de 12V.</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen7.jpg" width="200" height="200"></td>
+            <td>
+                <li>Focos LED H4 - Alta Potencia y Máxima Visibilidad.</li>
+                <li>Tipo de conector: H4 (compatible con muchos modelos).</li>
+                <li>Tecnología: LED de alto brillo.</li>
+                <li>Voltaje: 12V - 24V (compatibles con sistemas eléctricos).</li>
+                <li>Temperatura de color: 6000K (Luz blanca fría, ideal para mejorar la visibilidad nocturna).</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen8.jpg" width="200" height="200"></td>
+            <td>
+                <li>Doble iluminación (Blanco y Amarillo): Ideal para cualquier condición climática.</li>
+                <li>Lente tipo lupa: Asegura un haz de luz más concentrado y potente.</li>
+                <li>Material de alta resistencia: Carcasa de aluminio con diseño disipador de calor.</li>
+                <li>Soporte ajustable: Fácil instalación y adaptación a diferentes ángulos.</li>
+                <li>Incluye kit de instalación: Tornillos, arandelas y tuercas para un montaje rápido y seguro.</li>
+                <li>Interruptores incluidos: Controla fácilmente el encendido y cambio de luz.</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen9.jpg" width="200" height="200"></td>
+            <td>
+                <li>Tipo: Faros LED auxiliares rectangulares.</li>
+                <li>Cantidad: 2 unidades.</li>
+                <li>Material: Carcasa de aluminio resistente con disipador de calor.</li>
+                <li>Color del cuerpo: Negro.</li>
+                <li>Iluminación: LED de alta potencia con luz blanca brillante.</li>
+                <li>Modos de luz: Luz de enfoque y luz de dispersión combinadas.</li>
+                <li>Lente: Acrílico resistente a impactos.</li>
+                <li>Base de montaje: Ajustable para diferentes ángulos de iluminación.</li>
+                <li>Incluye: Tornillos, tuercas y soportes para instalación.</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen10.jpg" width="200" height="200"></td>
+            <td>
+                <li>Luces LED en Forma de Calavera para Motos.</li>
+                <li>Diseño innovador con forma de calavera para un look llamativo y personalizado.</li>
+                <li>Iluminación LED de alta potencia con luz blanca y amarilla, ideal para mejorar la visibilidad en carretera.</li>
+                <li>Fabricadas con materiales de alta calidad y resistencia al agua, perfectas para cualquier clima.</li>
+                <li>Fácil instalación y compatibilidad con la mayoría de motocicletas.</li>
+                <li>Incluye interruptor y accesorios de montaje.</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/imagen11.jpg" width="200" height="200"></td>
+            <td>
+                <li>Luces LED con Diseño Futurista para Motos.</li>
+                <li>Diseño inspirado en máscaras tácticas para un aspecto imponente y moderno.</li>
+                <li>Iluminación LED de alta potencia con tres modos de luz: blanca, amarilla y combinación de ambas.</li>
+                <li>Fabricadas con materiales de alta resistencia y protección contra el agua y el polvo.</li>
+                <li>Incluyen interruptor de encendido y accesorios para una instalación sencilla.</li>
+                <li>Compatibles con la mayoría de motocicletas y vehículos todoterreno.</li>
+            </td>
+        </tr>
+
+    </table>
+</main>
+
 <footer>
-    <p>©2025  Taller D.A.Y. Motors. Todos los derechos reservados.</p>
-    <p style="color: red;">ByKevinhero</p>
+    <p>©2025 Taller D.A.Y. Motors. Todos los derechos reservados.</p>
+    <p>ByKevinhero</p>
 </footer>
+
 </body>
 </html>
